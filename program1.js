@@ -26,7 +26,7 @@ const getTotalIsles = function (grid) {
     for (let j = 0; j < cols; j++) {
       if (grid[i][j] === 'L' && !visited[i][j]) {
         dfs(i, j);
-
+        islandCount++;
       }
     }
   }
