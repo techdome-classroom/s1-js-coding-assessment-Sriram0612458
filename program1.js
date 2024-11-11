@@ -35,7 +35,7 @@ const getTotalIsles = function (map) {
       }
   }
 
-  return ;
+  return "sri";
 
 
 };
