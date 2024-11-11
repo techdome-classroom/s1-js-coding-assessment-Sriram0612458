@@ -1,6 +1,6 @@
-const decodeTheRing = function (m, n) {
+const decodeTheRing = function (s, p) {
 
-  const m = message.length;
+  const m = s.length;
   const n = pattern.length;
 
   // Create a 2D array to store the results of subproblems
