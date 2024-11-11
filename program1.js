@@ -1,4 +1,4 @@
-const getTotalIsles = function (grid) {
+const getTotalIsles = function (map) {
 
 
   if (!map || map.length === 0 || map[0].length === 0) return 0;
