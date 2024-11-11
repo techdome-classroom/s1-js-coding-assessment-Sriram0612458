@@ -19,7 +19,7 @@ const decodeTheRing = function (s, p) {
   // Fill the dp table
   for (let i = 1; i <= m; i++) {
     for (let j = 1; j <= n; j++) {
-      if (pattern[j - 1] === '*') {
+      if (p[j - 1] === '*') {
         // '*' can match zero characters (dp[i][j-1]) or one more character (dp[i-1][j])
         dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
       } else if (pattern[j - 1] === '?' || pattern[j - 1] === message[i - 1]) {
