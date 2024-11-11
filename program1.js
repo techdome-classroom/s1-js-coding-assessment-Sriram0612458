@@ -1,10 +1,10 @@
 const getTotalIsles = function (grid) {
 
 
-  if (!map || map.length === 0 || map[0].length === 0) return 0;
+  if (!grid || grid.length === 0 || grid[0].length === 0) return 0;
 
-  const rows = map.length;
-  const cols = map[0].length;
+  const rows = grid.length;
+  const cols = grid[0].length;
   const visited = Array.from({ length: rows }, () => Array(cols).fill(false));
   let islandCount = 0;
 
