@@ -12,7 +12,7 @@ const getTotalIsles = function (grid) {
       if (row < 0 || row >= rows || col < 0 || col >= cols) return;
 
 
-      if (map[row][col] === 'W' || visited[row][col]) return;
+      if (grid[row][col] === 'W' || visited[row][col]) return;
 
       visited[row][col] = true;
 
