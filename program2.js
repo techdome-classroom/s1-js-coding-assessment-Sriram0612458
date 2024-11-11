@@ -11,7 +11,7 @@ const decodeTheRing = function (s, p) {
 
   // Handle patterns that start with '*' which can match empty message
   for (let j = 1; j <= n; j++) {
-    if (pattern[j - 1] === '*') {
+    if (p[j - 1] === '*') {
       dp[0][j] = dp[0][j - 1];
     }
   }
