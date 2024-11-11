@@ -29,7 +29,6 @@ const decodeTheRing = function (s, p) {
     }
   }
 
-  // The result is in the bottom-right corner of the dp table
   return dp[m][n];
 
 
