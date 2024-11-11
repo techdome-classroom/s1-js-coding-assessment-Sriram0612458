@@ -22,7 +22,7 @@ const decodeTheRing = function (s, p) {
       if (p[j - 1] === '*') {
         // '*' can match zero characters (dp[i][j-1]) or one more character (dp[i-1][j])
         dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
-      } else if (pattern[j - 1] === '?' || pattern[j - 1] === message[i - 1]) {
+      } else if (p[j - 1] === '?' || p[j - 1] === s[i - 1]) {
         // '?' matches any single character or exact character match
         dp[i][j] = dp[i - 1][j - 1];
       }
